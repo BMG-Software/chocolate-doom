@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{11ECAE7D-3414-39F4-ADD3-79D36E506FD9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>chocolate-hexen</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Projects\2020\chocolate-doom\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">chocolate-hexen.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">chocolate-hexen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Projects\2020\chocolate-doom\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">chocolate-hexen.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">chocolate-hexen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\Projects\2020\chocolate-doom\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">chocolate-hexen.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">chocolate-hexen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Projects\2020\chocolate-doom\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">chocolate-hexen.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">chocolate-hexen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>hexen\Debug\hexen.lib;SDL2::SDL2main.lib;SDL2::SDL2.lib;SDL2::mixer.lib;SDL2::net.lib;..\textscreen\Debug\textscreen.lib;..\pcsound\Debug\pcsound.lib;..\opl\Debug\opl.lib;SDL2::SDL2.lib;SDL2::mixer.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Projects/2020/chocolate-doom/src/Debug/chocolate-hexen.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Projects/2020/chocolate-doom/src/Debug/chocolate-hexen.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>hexen\Release\hexen.lib;SDL2::SDL2main.lib;SDL2::SDL2.lib;SDL2::mixer.lib;SDL2::net.lib;..\textscreen\Release\textscreen.lib;..\pcsound\Release\pcsound.lib;..\opl\Release\opl.lib;SDL2::SDL2.lib;SDL2::mixer.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Projects/2020/chocolate-doom/src/Release/chocolate-hexen.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Projects/2020/chocolate-doom/src/Release/chocolate-hexen.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>hexen\MinSizeRel\hexen.lib;SDL2::SDL2main.lib;SDL2::SDL2.lib;SDL2::mixer.lib;SDL2::net.lib;..\textscreen\MinSizeRel\textscreen.lib;..\pcsound\MinSizeRel\pcsound.lib;..\opl\MinSizeRel\opl.lib;SDL2::SDL2.lib;SDL2::mixer.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Projects/2020/chocolate-doom/src/MinSizeRel/chocolate-hexen.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Projects/2020/chocolate-doom/src/MinSizeRel/chocolate-hexen.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\..;F:\Projects\2020\chocolate-doom\win32;F:\Projects\2020\chocolate-doom\textscreen\.;F:\Projects\2020\chocolate-doom\pcsound\.;F:\Projects\2020\chocolate-doom\opl\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>hexen\RelWithDebInfo\hexen.lib;SDL2::SDL2main.lib;SDL2::SDL2.lib;SDL2::mixer.lib;SDL2::net.lib;..\textscreen\RelWithDebInfo\textscreen.lib;..\pcsound\RelWithDebInfo\pcsound.lib;..\opl\RelWithDebInfo\opl.lib;SDL2::SDL2.lib;SDL2::mixer.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Projects/2020/chocolate-doom/src/RelWithDebInfo/chocolate-hexen.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Projects/2020/chocolate-doom/src/RelWithDebInfo/chocolate-hexen.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Projects\2020\chocolate-doom\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/Projects/2020/chocolate-doom/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Projects/2020/chocolate-doom -BF:/Projects/2020/chocolate-doom --check-stamp-file F:/Projects/2020/chocolate-doom/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Projects\2020\chocolate-doom\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/Projects/2020/chocolate-doom/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Projects/2020/chocolate-doom -BF:/Projects/2020/chocolate-doom --check-stamp-file F:/Projects/2020/chocolate-doom/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Projects\2020\chocolate-doom\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/Projects/2020/chocolate-doom/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Projects/2020/chocolate-doom -BF:/Projects/2020/chocolate-doom --check-stamp-file F:/Projects/2020/chocolate-doom/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\Projects\2020\chocolate-doom\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/Projects/2020/chocolate-doom/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Projects/2020/chocolate-doom -BF:/Projects/2020/chocolate-doom --check-stamp-file F:/Projects/2020/chocolate-doom/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Projects\2020\chocolate-doom\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_main.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_system.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_system.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\m_argv.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\m_argv.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\m_misc.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\m_misc.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\aes_prng.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\aes_prng.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\d_event.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\d_event.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doomkeys.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doomtype.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\d_iwad.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\d_iwad.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\d_loop.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\d_loop.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\d_mode.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\d_mode.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\d_ticcmd.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\deh_str.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\deh_str.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\gusconf.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\gusconf.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_cdmus.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_cdmus.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_endoom.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_endoom.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_glob.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_glob.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_input.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_input.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_joystick.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_joystick.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_swap.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_midipipe.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_midipipe.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_musicpack.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_oplmusic.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_pcsound.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_sdlmusic.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_sdlsound.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_sound.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_sound.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_timer.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_timer.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_video.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_video.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_videohr.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_videohr.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\midifile.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\midifile.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\mus2mid.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\mus2mid.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\m_bbox.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\m_bbox.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\m_cheat.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\m_cheat.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\m_config.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\m_config.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\m_controls.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\m_controls.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\m_fixed.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\m_fixed.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_client.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_client.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_common.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_common.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_dedicated.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_dedicated.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_defs.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_gui.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_gui.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_io.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_io.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_loop.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_loop.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_packet.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_packet.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_petname.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_petname.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_query.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_query.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_sdl.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_sdl.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_server.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_server.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\net_structrw.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\net_structrw.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\sha1.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\sha1.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\memio.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\memio.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\tables.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\tables.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\v_diskicon.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\v_diskicon.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\v_video.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\v_video.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\v_patch.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\w_checksum.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\w_checksum.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\w_main.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\w_main.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\w_wad.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\w_wad.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\w_file.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\w_file.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\w_file_stdc.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\w_file_posix.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\w_file_win32.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\w_merge.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\w_merge.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\z_zone.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\z_zone.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\win32\win_opendir.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\win32\win_opendir.h" />
+    <ResourceCompile Include="F:\Projects\2020\chocolate-doom\src\resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Projects\2020\chocolate-doom\ZERO_CHECK.vcxproj">
+      <Project>{458498C9-C51F-3302-B01C-B6E9F9F3495C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Projects\2020\chocolate-doom\src\hexen\hexen.vcxproj">
+      <Project>{BF8C3E22-6D98-3FA0-9543-5BCFEF7C9060}</Project>
+      <Name>hexen</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Projects\2020\chocolate-doom\opl\opl.vcxproj">
+      <Project>{95AE3A38-872B-3769-9909-65B47AEE36D1}</Project>
+      <Name>opl</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Projects\2020\chocolate-doom\pcsound\pcsound.vcxproj">
+      <Project>{DB2FBFD0-D7D6-3C15-8B75-3EBD41BF0116}</Project>
+      <Name>pcsound</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Projects\2020\chocolate-doom\textscreen\textscreen.vcxproj">
+      <Project>{9364A8A5-84D4-3E91-9E3C-EB73468EA8FE}</Project>
+      <Name>textscreen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

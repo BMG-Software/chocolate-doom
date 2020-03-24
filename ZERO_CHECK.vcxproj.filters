@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\Projects\2020\chocolate-doom\CMakeFiles\79d64b180fcdfa98ebb1b34b39747502\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{80A064B4-865B-3907-8652-871153615D84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

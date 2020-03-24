@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{512C78DB-45B2-33EF-AD65-50F4D56BF663}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>doom</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Projects\2020\chocolate-doom\src\doom\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">doom.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">doom</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Projects\2020\chocolate-doom\src\doom\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">doom.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">doom</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\Projects\2020\chocolate-doom\src\doom\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">doom.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">doom</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Projects\2020\chocolate-doom\src\doom\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">doom.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">doom</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;C:\SDL2\SDL2-2.0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Projects\2020\chocolate-doom\src\doom\..;F:\Projects\2020\chocolate-doom\src\doom\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Projects\2020\chocolate-doom\src\doom\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/Projects/2020/chocolate-doom/src/doom/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Projects/2020/chocolate-doom -BF:/Projects/2020/chocolate-doom --check-stamp-file F:/Projects/2020/chocolate-doom/src/doom/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Projects\2020\chocolate-doom\src\doom\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/Projects/2020/chocolate-doom/src/doom/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Projects/2020/chocolate-doom -BF:/Projects/2020/chocolate-doom --check-stamp-file F:/Projects/2020/chocolate-doom/src/doom/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Projects\2020\chocolate-doom\src\doom\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/Projects/2020/chocolate-doom/src/doom/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Projects/2020/chocolate-doom -BF:/Projects/2020/chocolate-doom --check-stamp-file F:/Projects/2020/chocolate-doom/src/doom/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\Projects\2020\chocolate-doom\src\doom\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/Projects/2020/chocolate-doom/src/doom/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Projects/2020/chocolate-doom -BF:/Projects/2020/chocolate-doom --check-stamp-file F:/Projects/2020/chocolate-doom/src/doom/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Projects\2020\chocolate-doom\src\doom\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\am_map.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\am_map.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_ammo.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_bexstr.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_cheat.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_doom.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_frame.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_misc.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\deh_misc.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_ptr.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_sound.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_thing.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_weapon.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\d_englsh.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\d_items.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\d_items.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\d_main.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\d_main.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\d_net.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\doomdata.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\doomdef.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\doomdef.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\doomstat.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\doomstat.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\d_player.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\dstrings.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\dstrings.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\d_textur.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\d_think.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\f_finale.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\f_finale.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\f_wipe.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\f_wipe.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\g_game.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\g_game.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\hu_lib.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\hu_lib.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\hu_stuff.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\hu_stuff.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\info.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\info.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\m_menu.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\m_menu.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\m_random.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\m_random.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_ceilng.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_doors.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_enemy.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_floor.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_inter.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_inter.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_lights.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_local.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_map.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_maputl.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_mobj.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_mobj.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_plats.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_pspr.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_pspr.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_saveg.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_saveg.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_setup.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_setup.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_sight.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_spec.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_spec.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_switch.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_telept.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_tick.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_tick.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_user.c" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_bsp.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_bsp.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_data.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_data.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_defs.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_draw.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_draw.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_local.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_main.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_main.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_plane.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_plane.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_segs.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_segs.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_sky.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_sky.h" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_state.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_things.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_things.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\s_sound.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\s_sound.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\sounds.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\sounds.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\statdump.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\statdump.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\st_lib.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\st_lib.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\st_stuff.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\st_stuff.h" />
+    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\wi_stuff.c" />
+    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\wi_stuff.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Projects\2020\chocolate-doom\ZERO_CHECK.vcxproj">
+      <Project>{458498C9-C51F-3302-B01C-B6E9F9F3495C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

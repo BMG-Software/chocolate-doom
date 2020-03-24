@@ -1,0 +1,36 @@
+﻿  txt_conditional.c
+  txt_checkbox.c
+  txt_desktop.c
+  txt_dropdown.c
+F:\Projects\2020\chocolate-doom\textscreen\txt_dropdown.c(118): warning C4018: '>': signed/unsigned mismatch
+  txt_fileselect.c
+  txt_gui.c
+F:\Projects\2020\chocolate-doom\textscreen\txt_gui.c(253): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  txt_inputbox.c
+F:\Projects\2020\chocolate-doom\textscreen\txt_inputbox.c(148): warning C4018: '>': signed/unsigned mismatch
+  txt_io.c
+  txt_button.c
+  txt_label.c
+  txt_radiobutton.c
+  txt_scrollpane.c
+F:\Projects\2020\chocolate-doom\textscreen\txt_scrollpane.c(157): warning C4018: '<': signed/unsigned mismatch
+F:\Projects\2020\chocolate-doom\textscreen\txt_scrollpane.c(161): warning C4018: '<': signed/unsigned mismatch
+  txt_separator.c
+  txt_spinctrl.c
+F:\Projects\2020\chocolate-doom\textscreen\txt_spinctrl.c(56): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+  txt_sdl.c
+F:\Projects\2020\chocolate-doom\textscreen\txt_sdl.c(267): warning C4018: '>=': signed/unsigned mismatch
+F:\Projects\2020\chocolate-doom\textscreen\txt_sdl.c(268): warning C4018: '>=': signed/unsigned mismatch
+F:\Projects\2020\chocolate-doom\textscreen\txt_sdl.c(966): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  txt_strut.c
+  txt_table.c
+  txt_utf8.c
+  txt_widget.c
+F:\Projects\2020\chocolate-doom\textscreen\txt_widget.c(305): warning C4018: '<': signed/unsigned mismatch
+F:\Projects\2020\chocolate-doom\textscreen\txt_widget.c(306): warning C4018: '<': signed/unsigned mismatch
+  txt_window.c
+  Generating Code...
+  Compiling...
+  txt_window_action.c
+  Generating Code...
+  textscreen.vcxproj -> F:\Projects\2020\chocolate-doom\textscreen\Debug\textscreen.lib
