@@ -33,7 +33,7 @@
 #include "m_misc.h"
 #include "i_system.h"
 #include "i_timer.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 
 // Needs access to LFB.
 #include "v_video.h"
@@ -425,6 +425,7 @@ void AM_changeWindowLoc(void)
 //
 void AM_initVariables(void)
 {
+    /*
     int pnum;
     static event_t st_notify = { ev_keyup, AM_MSGENTERED, 0, 0 };
 
@@ -473,7 +474,7 @@ void AM_initVariables(void)
 
     // inform the status bar of the change
     ST_Responder(&st_notify);
-
+    */
 }
 
 //

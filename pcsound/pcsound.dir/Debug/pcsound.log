@@ -1,1 +1,10 @@
-﻿  pcsound.vcxproj -> F:\Projects\2020\chocolate-doom\pcsound\Debug\pcsound.lib
+﻿  Building Custom Rule F:/Projects/2020/chocolate-doom/pcsound/CMakeLists.txt
+  pcsound.c
+  pcsound_bsd.c
+  pcsound_sdl.c
+  pcsound_linux.c
+  pcsound_win32.c
+F:\Projects\2020\chocolate-doom\pcsound\pcsound_win32.c(67): warning C4996: 'GetVersionExA': was declared deprecated
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\sysinfoapi.h(378): note: see declaration of 'GetVersionExA'
+  Generating Code...
+  pcsound.vcxproj -> F:\Projects\2020\chocolate-doom\pcsound\Debug\pcsound.lib

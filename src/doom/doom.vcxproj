@@ -269,6 +269,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\am_map.c" />
+    <ClCompile Include="r_bsp.c" />
+    <ClCompile Include="r_data.c" />
+    <ClCompile Include="r_draw.c" />
+    <ClCompile Include="r_main.c" />
+    <ClCompile Include="r_plane.c" />
+    <ClCompile Include="r_segs.c" />
+    <ClCompile Include="r_sky.c" />
+    <ClCompile Include="r_things.c" />
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\am_map.h" />
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_ammo.c" />
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\deh_bexstr.c" />
@@ -340,25 +348,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_tick.c" />
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_tick.h" />
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_user.c" />
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_bsp.c" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_bsp.h" />
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_data.c" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_data.h" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_defs.h" />
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_draw.c" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_draw.h" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_local.h" />
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_main.c" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_main.h" />
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_plane.c" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_plane.h" />
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_segs.c" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_segs.h" />
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_sky.c" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_sky.h" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_state.h" />
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_things.c" />
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_things.h" />
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\s_sound.c" />
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\s_sound.h" />
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\sounds.c" />
@@ -371,6 +360,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\st_stuff.h" />
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\wi_stuff.c" />
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\wi_stuff.h" />
+    <ClInclude Include="r_bsp.h" />
+    <ClInclude Include="r_data.h" />
+    <ClInclude Include="r_defs.h" />
+    <ClInclude Include="r_draw.h" />
+    <ClInclude Include="r_local.h" />
+    <ClInclude Include="r_main.h" />
+    <ClInclude Include="r_plane.h" />
+    <ClInclude Include="r_segs.h" />
+    <ClInclude Include="r_sky.h" />
+    <ClInclude Include="r_state.h" />
+    <ClInclude Include="r_things.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:\Projects\2020\chocolate-doom\ZERO_CHECK.vcxproj">

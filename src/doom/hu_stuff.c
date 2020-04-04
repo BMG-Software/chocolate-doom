@@ -26,7 +26,7 @@
 #include "deh_main.h"
 #include "i_input.h"
 #include "i_swap.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 
 #include "hu_stuff.h"
 #include "hu_lib.h"

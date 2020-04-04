@@ -25,7 +25,7 @@
 #include "m_misc.h"
 #include "i_system.h"
 #include "i_timer.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 #include "g_game.h"
 #include "doomdef.h"
 #include "doomstat.h"

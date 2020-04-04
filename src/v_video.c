@@ -31,7 +31,7 @@
 #include "deh_str.h"
 #include "i_input.h"
 #include "i_swap.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 #include "m_bbox.h"
 #include "m_misc.h"
 #include "v_video.h"
@@ -70,6 +70,7 @@ static vpatchclipfunc_t patchclip_callback = NULL;
 // 
 void V_MarkRect(int x, int y, int width, int height) 
 { 
+    /*
     // If we are temporarily using an alternate screen, do not 
     // affect the update box.
 
@@ -78,6 +79,7 @@ void V_MarkRect(int x, int y, int width, int height)
         M_AddToBox (dirtybox, x, y); 
         M_AddToBox (dirtybox, x + width-1, y + height-1); 
     }
+    */
 } 
  
 
@@ -534,6 +536,7 @@ void V_DrawBlock(int x, int y, int width, int height, pixel_t *src)
 
 void V_DrawFilledBox(int x, int y, int w, int h, int c)
 {
+    /*
     pixel_t *buf, *buf1;
     int x1, y1;
 
@@ -550,10 +553,12 @@ void V_DrawFilledBox(int x, int y, int w, int h, int c)
 
         buf += SCREENWIDTH;
     }
+    */
 }
 
 void V_DrawHorizLine(int x, int y, int w, int c)
 {
+    /*
     pixel_t *buf;
     int x1;
 
@@ -563,10 +568,12 @@ void V_DrawHorizLine(int x, int y, int w, int c)
     {
         *buf++ = c;
     }
+    */
 }
 
 void V_DrawVertLine(int x, int y, int h, int c)
 {
+    /*
     pixel_t *buf;
     int y1;
 
@@ -577,6 +584,7 @@ void V_DrawVertLine(int x, int y, int h, int c)
         *buf = c;
         buf += SCREENWIDTH;
     }
+    */
 }
 
 void V_DrawBox(int x, int y, int w, int h, int c)
@@ -618,7 +626,9 @@ void V_UseBuffer(pixel_t *buffer)
 
 void V_RestoreBuffer(void)
 {
+    /*
     dest_screen = I_VideoBuffer;
+    */
 }
 
 //
@@ -834,6 +844,7 @@ void WritePNGfile(char *filename, pixel_t *data,
 
 void V_ScreenShot(const char *format)
 {
+    /*
     int i;
     char lbmname[16]; // haleyjd 20110213: BUG FIX - 12 is too small!
     const char *ext;
@@ -891,6 +902,7 @@ void V_ScreenShot(const char *format)
                  SCREENWIDTH, SCREENHEIGHT,
                  W_CacheLumpName (DEH_String("PLAYPAL"), PU_CACHE));
     }
+    */
 }
 
 #define MOUSE_SPEED_BOX_WIDTH  120
@@ -986,6 +998,7 @@ static void DrawNonAcceleratingBox(int speed)
 
 void V_DrawMouseSpeedBox(int speed)
 {
+    /*
     extern int usemouse;
     int bgcolor, bordercolor, black;
 
@@ -998,10 +1011,12 @@ void V_DrawMouseSpeedBox(int speed)
     // Get palette indices for colors for widget. These depend on the
     // palette of the game being played.
 
+
+    
     bgcolor = I_GetPaletteIndex(0x77, 0x77, 0x77);
     bordercolor = I_GetPaletteIndex(0x55, 0x55, 0x55);
     black = I_GetPaletteIndex(0x00, 0x00, 0x00);
-
+    
     // Calculate box position
 
     V_DrawFilledBox(MOUSE_SPEED_BOX_X, MOUSE_SPEED_BOX_Y,
@@ -1021,5 +1036,6 @@ void V_DrawMouseSpeedBox(int speed)
     {
         DrawNonAcceleratingBox(speed);
     }
+    */
 }
 

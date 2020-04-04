@@ -26,7 +26,7 @@
 
 #include "i_system.h"
 #include "i_timer.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 #include "m_argv.h"
 #include "m_misc.h"
 
@@ -402,7 +402,7 @@ void NET_WaitForLaunch(void)
 
     TXT_SetColor(TXT_COLOR_BLUE, 0x04, 0x14, 0x40); // Romero's "funky blue" color
     
-    I_InitWindowIcon();
+    // I_InitWindowIcon();
 
     ParseCommandLineArgs();
     OpenWaitDialog();

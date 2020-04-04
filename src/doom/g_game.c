@@ -39,7 +39,7 @@
 #include "i_timer.h"
 #include "i_input.h"
 #include "i_swap.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 
 #include "p_setup.h"
 #include "p_saveg.h"

@@ -57,7 +57,12 @@
 #include "i_joystick.h"
 #include "i_system.h"
 #include "i_timer.h"
-#include "i_video.h"
+
+
+#include "i_glvideo.h"
+
+// #include "i_video.h"
+
 
 #include "g_game.h"
 
@@ -168,6 +173,8 @@ void R_ExecuteSetViewSize (void);
 
 boolean D_Display (void)
 {
+
+    /*
     static  boolean		viewactivestate = false;
     static  boolean		menuactivestate = false;
     static  boolean		inhelpscreensstate = false;
@@ -230,7 +237,7 @@ boolean D_Display (void)
     }
     
     // draw buffered stuff to screen
-    I_UpdateNoBlit ();
+    I_GLUpdateNoBlit ();
     
     // draw the view directly
     if (gamestate == GS_LEVEL && !automapactive && gametic)
@@ -292,6 +299,8 @@ boolean D_Display (void)
     NetUpdate ();         // send out any new accumulation
 
     return wipe;
+    */
+    return 1;
 }
 
 static void EnableLoadingDisk(void)
@@ -326,7 +335,7 @@ void D_BindVariables(void)
     M_ApplyPlatformDefaults();
 
     I_BindInputVariables();
-    I_BindVideoVariables();
+    // I_BindVideoVariables();
     I_BindJoystickVariables();
     I_BindSoundVariables();
 
@@ -394,6 +403,7 @@ boolean D_GrabMouseCallback(void)
 //
 void D_RunFrame()
 {
+    
     int nowtime;
     int tics;
     static int wipestart;
@@ -411,14 +421,14 @@ void D_RunFrame()
         wipestart = nowtime;
         wipe = !wipe_ScreenWipe(wipe_Melt
                                , 0, 0, SCREENWIDTH, SCREENHEIGHT, tics);
-        I_UpdateNoBlit ();
-        M_Drawer ();                            // menu is drawn even on top of wipes
-        I_FinishUpdate ();                      // page flip or blit buffer
+        I_GLUpdateNoBlit ();
+        // M_Drawer ();                            // menu is drawn even on top of wipes
+        I_GLFinishUpdate ();                    // page flip or blit buffer
         return;
     }
 
     // frame syncronous IO operations
-    I_StartFrame ();
+    I_GLStartFrame ();
 
     TryRunTics (); // will run at least one tic
 
@@ -435,9 +445,10 @@ void D_RunFrame()
             wipestart = I_GetTime () - 1;
         } else {
             // normal update
-            I_FinishUpdate ();              // page flip or blit buffer
+            I_GLFinishUpdate ();              // page flip or blit buffer
         }
     }
+    
 }
 
 //
@@ -455,14 +466,18 @@ void D_DoomLoop (void)
     }
 
     if (demorecording)
-	G_BeginRecording ();
+    {
+        G_BeginRecording();
+    }
 
     main_loop_started = true;
 
-    I_SetWindowTitle(gamedescription);
-    I_GraphicsCheckCommandLine();
-    I_SetGrabMouseCallback(D_GrabMouseCallback);
-    I_InitGraphics();
+    // I_SetWindowTitle(gamedescription);
+    // I_GraphicsCheckCommandLine();
+    // I_SetGrabMouseCallback(D_GrabMouseCallback);
+
+    I_GLInitGraphics();
+    
     EnableLoadingDisk();
 
     TryRunTics();
@@ -1331,7 +1346,7 @@ void D_DoomMain (void)
 
     devparm = M_CheckParm ("-devparm");
 
-    I_DisplayFPSDots(devparm);
+    // I_DisplayFPSDots(devparm);
 
     //!
     // @category net
@@ -1694,7 +1709,7 @@ void D_DoomMain (void)
     PrintDehackedBanners();
 
     DEH_printf("I_Init: Setting up machine state.\n");
-    I_CheckIsScreensaver();
+    //I_CheckIsScreensaver();
     I_InitTimer();
     I_InitJoystick();
     I_InitSound(true);

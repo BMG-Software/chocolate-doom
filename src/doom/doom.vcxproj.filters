@@ -133,30 +133,6 @@
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\p_user.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_bsp.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_data.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_draw.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_plane.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_segs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_sky.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\r_things.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\s_sound.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -174,6 +150,30 @@
     </ClCompile>
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\doom\wi_stuff.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_bsp.c">
+      <Filter>Source Files\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="r_data.c">
+      <Filter>Source Files\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="r_draw.c">
+      <Filter>Source Files\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="r_main.c">
+      <Filter>Source Files\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="r_plane.c">
+      <Filter>Source Files\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="r_segs.c">
+      <Filter>Source Files\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="r_sky.c">
+      <Filter>Source Files\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="r_things.c">
+      <Filter>Source Files\rendering</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -261,39 +261,6 @@
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\p_tick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_bsp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_data.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_defs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_draw.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_local.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_main.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_plane.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_segs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_sky.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_state.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\r_things.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\s_sound.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -312,6 +279,39 @@
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\doom\wi_stuff.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="r_bsp.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_data.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_defs.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_draw.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_local.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_main.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_plane.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_segs.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_sky.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_state.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="r_things.h">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="F:\Projects\2020\chocolate-doom\src\doom\CMakeLists.txt" />
@@ -322,6 +322,18 @@
     </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{BB603AD0-56A2-3C0F-8573-18DFF3B6B8F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rendering">
+      <UniqueIdentifier>{c859042a-0cac-41fc-a67f-a27b911706bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendering">
+      <UniqueIdentifier>{c64a53b3-947a-4529-bc70-5354ae50f46a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\glrendering">
+      <UniqueIdentifier>{c3a290a3-5c74-4c9a-988e-c1930a6de6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\glrendering">
+      <UniqueIdentifier>{cb8b3f10-1407-431b-af0c-9f04a61579d8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

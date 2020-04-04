@@ -23,7 +23,7 @@
 #include <stdio.h>
 
 #include "i_system.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 #include "z_zone.h"
 #include "m_misc.h"
 #include "m_random.h"
@@ -1018,7 +1018,9 @@ void ST_doPaletteStuff(void)
     {
 	st_palette = palette;
 	pal = (byte *) W_CacheLumpNum (lu_palette, PU_CACHE)+palette*768;
-	I_SetPalette (pal);
+
+	// I_SetPalette (pal);
+    
     }
 
 }
@@ -1438,7 +1440,7 @@ void ST_Stop (void)
     if (st_stopped)
 	return;
 
-    I_SetPalette (W_CacheLumpNum (lu_palette, PU_CACHE));
+    // I_SetPalette (W_CacheLumpNum (lu_palette, PU_CACHE));
 
     st_stopped = true;
 }

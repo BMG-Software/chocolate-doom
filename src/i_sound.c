@@ -25,7 +25,7 @@
 
 #include "gusconf.h"
 #include "i_sound.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 #include "m_argv.h"
 #include "m_config.h"
 

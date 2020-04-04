@@ -1,0 +1,27 @@
+﻿  compatibility.c
+  display.c
+  joystick.c
+  keyboard.c
+  mainmenu.c
+  mode.c
+F:\Projects\2020\chocolate-doom\src\setup\mode.c(307): warning C4090: 'function': different 'const' qualifiers
+  mouse.c
+  multiplayer.c
+F:\Projects\2020\chocolate-doom\src\setup\multiplayer.c(364): warning C4244: '=': conversion from 'intptr_t' to 'int', possible loss of data
+F:\Projects\2020\chocolate-doom\src\setup\multiplayer.c(376): warning C4244: '=': conversion from 'intptr_t' to 'int', possible loss of data
+F:\Projects\2020\chocolate-doom\src\setup\multiplayer.c(420): warning C4244: 'function': conversion from 'intptr_t' to 'int', possible loss of data
+F:\Projects\2020\chocolate-doom\src\setup\multiplayer.c(453): warning C4244: 'function': conversion from 'intptr_t' to 'int', possible loss of data
+F:\Projects\2020\chocolate-doom\src\setup\multiplayer.c(571): warning C4018: '<': signed/unsigned mismatch
+  sound.c
+F:\Projects\2020\chocolate-doom\src\setup\sound.c(64): warning C4305: 'initializing': truncation from 'double' to 'float'
+  execute.c
+F:\Projects\2020\chocolate-doom\src\setup\execute.c(150): warning C4311: 'type cast': pointer truncation from 'HINSTANCE' to 'int'
+F:\Projects\2020\chocolate-doom\src\setup\execute.c(177): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+F:\Projects\2020\chocolate-doom\src\setup\execute.c(178): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  txt_joyaxis.c
+F:\Projects\2020\chocolate-doom\src\setup\txt_joyaxis.c(464): warning C4018: '<': signed/unsigned mismatch
+  txt_joybinput.c
+  txt_keyinput.c
+  txt_mouseinput.c
+  Generating Code...
+  setup.vcxproj -> F:\Projects\2020\chocolate-doom\src\setup\Debug\setup.lib

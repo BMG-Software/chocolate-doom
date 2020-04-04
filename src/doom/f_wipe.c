@@ -19,7 +19,7 @@
 #include <string.h>
 
 #include "z_zone.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 #include "v_video.h"
 #include "m_random.h"
 
@@ -234,8 +234,10 @@ wipe_StartScreen
   int	width,
   int	height )
 {
+    /*
     wipe_scr_start = Z_Malloc(SCREENWIDTH * SCREENHEIGHT * sizeof(*wipe_scr_start), PU_STATIC, NULL);
     I_ReadScreen(wipe_scr_start);
+    */
     return 0;
 }
 
@@ -246,9 +248,11 @@ wipe_EndScreen
   int	width,
   int	height )
 {
+    /*
     wipe_scr_end = Z_Malloc(SCREENWIDTH * SCREENHEIGHT * sizeof(*wipe_scr_end), PU_STATIC, NULL);
     I_ReadScreen(wipe_scr_end);
     V_DrawBlock(x, y, width, height, wipe_scr_start); // restore start scr.
+    */
     return 0;
 }
 
@@ -261,6 +265,8 @@ wipe_ScreenWipe
   int	height,
   int	ticks )
 {
+    /*
+
     int rc;
     static int (*wipes[])(int, int, int) =
     {
@@ -288,7 +294,9 @@ wipe_ScreenWipe
 	go = 0;
 	(*wipes[wipeno*3+2])(width, height, ticks);
     }
-
+    
     return !go;
+    */
+    return 0; // TODO: What return value do I need to pass this check?
 }
 

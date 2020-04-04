@@ -18,7 +18,6 @@
 
 
 #include "SDL.h"
-#include "SDL_opengl.h"
 
 #ifdef _WIN32
 #ifndef WIN32_LEAN_AND_MEAN
@@ -37,7 +36,7 @@
 #include "i_joystick.h"
 #include "i_system.h"
 #include "i_timer.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 #include "m_argv.h"
 #include "m_config.h"
 #include "m_misc.h"

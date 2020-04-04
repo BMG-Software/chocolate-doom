@@ -25,7 +25,7 @@
 
 #include "i_system.h"
 #include "i_timer.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h"  
 
 #include "m_argv.h"
 #include "m_fixed.h"
@@ -144,7 +144,7 @@ static boolean BuildNewTic(void)
 
     gameticdiv = gametic/ticdup;
 
-    I_StartTic ();
+    I_GLStartTic ();
     loop_interface->ProcessEvents();
 
     // Always run the menu

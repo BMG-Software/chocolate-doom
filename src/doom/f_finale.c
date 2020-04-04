@@ -226,6 +226,8 @@ extern	patch_t *hu_font[HU_FONTSIZE];
 
 void F_TextWrite (void)
 {
+    /*
+
     byte*	src;
     pixel_t*	dest;
     
@@ -289,7 +291,7 @@ void F_TextWrite (void)
 	V_DrawPatch(cx, cy, hu_font[c]);
 	cx+=w;
     }
-	
+	*/
 }
 
 //
@@ -574,6 +576,8 @@ F_DrawPatchCol
   patch_t*	patch,
   int		col )
 {
+
+    /*
     column_t*	column;
     byte*	source;
     pixel_t*	dest;
@@ -597,6 +601,7 @@ F_DrawPatchCol
 	}
 	column = (column_t *)(  (byte *)column + column->length + 4 );
     }
+    */
 }
 
 

@@ -42,7 +42,7 @@
 #include "i_joystick.h"
 #include "i_sound.h"
 #include "i_timer.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 
 #include "i_system.h"
 

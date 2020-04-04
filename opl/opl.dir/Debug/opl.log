@@ -1,1 +1,22 @@
-﻿  opl.vcxproj -> F:\Projects\2020\chocolate-doom\opl\Debug\opl.lib
+﻿  Building Custom Rule F:/Projects/2020/chocolate-doom/opl/CMakeLists.txt
+  opl.c
+F:\Projects\2020\chocolate-doom\opl\opl.c(143): warning C4013: 'strcmp' undefined; assuming extern returning int
+  opl_linux.c
+  opl_obsd.c
+  opl_queue.c
+F:\Projects\2020\chocolate-doom\opl\opl_queue.c(148): warning C4018: '<': signed/unsigned mismatch
+F:\Projects\2020\chocolate-doom\opl\opl_queue.c(154): warning C4018: '<': signed/unsigned mismatch
+F:\Projects\2020\chocolate-doom\opl\opl_queue.c(164): warning C4018: '<': signed/unsigned mismatch
+F:\Projects\2020\chocolate-doom\opl\opl_queue.c(210): warning C4018: '<': signed/unsigned mismatch
+  opl_sdl.c
+F:\Projects\2020\chocolate-doom\opl\opl_sdl.c(163): warning C4018: '<': signed/unsigned mismatch
+F:\Projects\2020\chocolate-doom\opl\opl_sdl.c(215): warning C4244: 'function': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+F:\Projects\2020\chocolate-doom\opl\opl_sdl.c(216): warning C4244: '+=': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+F:\Projects\2020\chocolate-doom\opl\opl_sdl.c(220): warning C4244: 'function': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+  opl_timer.c
+F:\Projects\2020\chocolate-doom\opl\opl_timer.c(149): warning C4244: 'function': conversion from 'uint64_t' to 'Uint32', possible loss of data
+  opl_win32.c
+  ioperm_sys.c
+  opl3.c
+  Generating Code...
+  opl.vcxproj -> F:\Projects\2020\chocolate-doom\opl\Debug\opl.lib

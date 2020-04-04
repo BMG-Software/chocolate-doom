@@ -73,12 +73,6 @@
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_timer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_video.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\Projects\2020\chocolate-doom\src\i_videohr.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\midifile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -193,6 +187,9 @@
     <ClCompile Include="F:\Projects\2020\chocolate-doom\src\deh_text.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="i_glvideo.c">
+      <Filter>Source Files\glrendering</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_system.h">
@@ -259,12 +256,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_timer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_video.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\Projects\2020\chocolate-doom\src\i_videohr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\midifile.h">
@@ -378,6 +369,9 @@
     <ClInclude Include="F:\Projects\2020\chocolate-doom\src\deh_mapping.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="i_glvideo.h">
+      <Filter>Header Files\glrendering</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="F:\Projects\2020\chocolate-doom\src\CMakeLists.txt" />
@@ -394,5 +388,22 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{BB603AD0-56A2-3C0F-8573-18DFF3B6B8F1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\glrendering">
+      <UniqueIdentifier>{8d8f52cf-4e2e-4939-8c5a-675ae1e764d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\glrendering">
+      <UniqueIdentifier>{1f136398-050c-421b-bfdd-39f81a76628d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{ee8f89ce-01d5-4845-af38-867c39130c3c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\frag.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\vert.glsl">
+      <Filter>shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

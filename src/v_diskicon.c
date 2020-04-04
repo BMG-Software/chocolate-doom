@@ -19,7 +19,7 @@
 #include "doomtype.h"
 #include "deh_str.h"
 #include "i_swap.h"
-#include "i_video.h"
+#include "i_glvideo.h" //#include "i_video.h" 
 #include "m_argv.h"
 #include "v_video.h"
 #include "w_wad.h"
@@ -119,9 +119,12 @@ void V_BeginRead(size_t nbytes)
 
 static pixel_t *DiskRegionPointer(void)
 {
+    /*
     return I_VideoBuffer
          + loading_disk_yoffs * SCREENWIDTH
          + loading_disk_xoffs;
+         */
+    return NULL; // TODO: fix this as necessary
 }
 
 void V_DrawDiskIcon(void)

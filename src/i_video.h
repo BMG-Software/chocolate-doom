@@ -24,12 +24,12 @@
 
 // Screen width and height.
 
-#define SCREENWIDTH  320
-#define SCREENHEIGHT 200
+#define SCREENWIDTH  320 // TODO: Move to i_videocommon.h file (maybe?)
+#define SCREENHEIGHT 200 // TODO: Move to i_videocommon.h file (maybe?)
 
 // Screen height used when aspect_ratio_correct=true.
 
-#define SCREENHEIGHT_4_3 240
+#define SCREENHEIGHT_4_3 240 // TODO: Move to i_videocommon.h file (maybe?)
 
 typedef boolean (*grabmouse_callback_t)(void);
 

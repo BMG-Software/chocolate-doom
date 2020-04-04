@@ -778,6 +778,8 @@ R_InitBuffer
 ( int		width,
   int		height ) 
 { 
+
+    /*
     int		i; 
 
     // Handle resize,
@@ -798,6 +800,7 @@ R_InitBuffer
     // Preclaculate all row offsets.
     for (i=0 ; i<height ; i++) 
 	ylookup[i] = I_VideoBuffer + (i+viewwindowy)*SCREENWIDTH; 
+    */
 } 
  
  
@@ -920,6 +923,9 @@ R_VideoErase
 ( unsigned	ofs,
   int		count ) 
 { 
+
+    /*
+
   // LFB copy.
   // This might not be a good idea if memcpy
   //  is not optiomal, e.g. byte by byte on
@@ -930,6 +936,7 @@ R_VideoErase
     {
         memcpy(I_VideoBuffer + ofs, background_buffer + ofs, count * sizeof(*I_VideoBuffer));
     }
+    */
 } 
 
 
