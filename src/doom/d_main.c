@@ -409,7 +409,7 @@ void D_RunFrame()
     static int wipestart;
     static boolean wipe;
 
-    if (wipe)
+    if (wipe) // TODO: Sort out or dummy screen wipe
     {
         do
         {

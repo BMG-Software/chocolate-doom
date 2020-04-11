@@ -29,6 +29,8 @@
 
 // Here are the functions I think I'll need for now (pending further investigation)
 
+void I_GLGetEvent();
+
 /*
 Called by D_DoomMain
 Sets up all the OpenGL video stuff we need
