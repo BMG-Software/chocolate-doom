@@ -32,6 +32,11 @@
 #include "m_bbox.h"
 #include "m_menu.h"
 
+#include "SDL_opengl.h"
+#include "i_glvideo.h"
+
+
+
 #include "r_local.h"
 #include "r_sky.h"
 
@@ -822,6 +827,10 @@ R_PointInSubsector
 //
 void R_SetupFrame (player_t* player)
 {		
+
+    // TODO: retain this function. This can setup our GL camera for us
+
+    /*
     int		i;
     
     viewplayer = player;
@@ -853,6 +862,7 @@ void R_SetupFrame (player_t* player)
 		
     framecount++;
     validcount++;
+    */
 }
 
 
@@ -862,8 +872,22 @@ void R_SetupFrame (player_t* player)
 //
 void R_RenderPlayerView (player_t* player)
 {	
+
+    
+
+
+
+    
+
     R_SetupFrame (player);
 
+    GLfloat test_data[] = { 0.0,  0.8, -0.8, -0.8, 0.8, -0.8, };
+
+    I_GLPushData(test_data, 6);
+
+    //R_RenderBSPNode(numnodes - 1);
+
+    /*
     // Clear buffers.
     R_ClearClipSegs ();
     R_ClearDrawSegs ();
@@ -887,5 +911,7 @@ void R_RenderPlayerView (player_t* player)
     R_DrawMasked ();
 
     // Check for new console commands.
-    NetUpdate ();				
+    NetUpdate ();
+
+    */
 }

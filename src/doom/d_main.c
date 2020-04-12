@@ -174,7 +174,7 @@ void R_ExecuteSetViewSize (void);
 boolean D_Display (void)
 {
 
-    /*
+    
     static  boolean		viewactivestate = false;
     static  boolean		menuactivestate = false;
     static  boolean		inhelpscreensstate = false;
@@ -204,8 +204,10 @@ boolean D_Display (void)
     else
 	wipe = false;
 
+    // Hud stuff. Shall eventually be implemented
+    /*
     if (gamestate == GS_LEVEL && gametic)
-	HU_Erase();
+	HU_Erase();*/ 
     
     // do buffered drawing
     switch (gamestate)
@@ -241,23 +243,28 @@ boolean D_Display (void)
     
     // draw the view directly
     if (gamestate == GS_LEVEL && !automapactive && gametic)
-	R_RenderPlayerView (&players[displayplayer]);
+	    R_RenderPlayerView (&players[displayplayer]);
 
-    if (gamestate == GS_LEVEL && gametic)
-	HU_Drawer ();
+    // Heads up display drawing
+    /*if (gamestate == GS_LEVEL && gametic)
+	HU_Drawer ();*/
     
     // clean up border stuff
-    if (gamestate != oldgamestate && gamestate != GS_LEVEL)
+    /*if (gamestate != oldgamestate && gamestate != GS_LEVEL)
 	I_SetPalette (W_CacheLumpName (DEH_String("PLAYPAL"),PU_CACHE));
+    */
 
+    // Border stuff not really needed
     // see if the border needs to be initially drawn
+    /*
     if (gamestate == GS_LEVEL && oldgamestate != GS_LEVEL)
     {
 	viewactivestate = false;        // view was not active
 	R_FillBackScreen ();    // draw the pattern into the back screen
-    }
+    }*/
 
     // see if the border needs to be updated to the screen
+    /*
     if (gamestate == GS_LEVEL && !automapactive && scaledviewwidth != SCREENWIDTH)
     {
 	if (menuactive || menuactivestate || !viewactivestate)
@@ -268,7 +275,7 @@ boolean D_Display (void)
 	    borderdrawcount--;
 	}
 
-    }
+    }*/
 
     if (testcontrols)
     {
@@ -298,9 +305,7 @@ boolean D_Display (void)
     M_Drawer ();          // menu is drawn even on top of everything
     NetUpdate ();         // send out any new accumulation
 
-    return wipe;
-    */
-    return 1;
+    return 0; // No wipe
 }
 
 static void EnableLoadingDisk(void)
@@ -409,6 +414,7 @@ void D_RunFrame()
     static int wipestart;
     static boolean wipe;
 
+    /*
     if (wipe) // TODO: Sort out or dummy screen wipe
     {
         do
@@ -425,12 +431,12 @@ void D_RunFrame()
         // M_Drawer ();                            // menu is drawn even on top of wipes
         I_GLFinishUpdate ();                    // page flip or blit buffer
         return;
-    }
+    }*/
 
     // frame syncronous IO operations
     I_GLStartFrame ();
 
-    TryRunTics (); // will run at least one tic
+   // TryRunTics (); // No running game tics for now
 
     S_UpdateSounds (players[consoleplayer].mo);// move positional sounds
 
@@ -439,10 +445,12 @@ void D_RunFrame()
     {
         if ((wipe = D_Display ()))
         {
+            // Remove all wipes for now
+            /*
             // start wipe on this frame
             wipe_EndScreen(0, 0, SCREENWIDTH, SCREENHEIGHT);
 
-            wipestart = I_GetTime () - 1;
+            wipestart = I_GetTime () - 1;*/
         } else {
             // normal update
             I_GLFinishUpdate ();              // page flip or blit buffer

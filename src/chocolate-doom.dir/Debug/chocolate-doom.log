@@ -1,36 +1,7 @@
-﻿  d_loop.c
-  i_endoom.c
-  i_sound.c
-  i_system.c
-F:\Projects\2020\chocolate-doom\src\i_system.c(164): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  m_misc.c
-F:\Projects\2020\chocolate-doom\src\m_misc.c(191): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-F:\Projects\2020\chocolate-doom\src\m_misc.c(221): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-F:\Projects\2020\chocolate-doom\src\m_misc.c(393): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-F:\Projects\2020\chocolate-doom\src\m_misc.c(394): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-F:\Projects\2020\chocolate-doom\src\m_misc.c(628): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-F:\Projects\2020\chocolate-doom\src\m_misc.c(649): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-  net_gui.c
-F:\Projects\2020\chocolate-doom\src\net_gui.c(139): warning C4018: '<': signed/unsigned mismatch
-F:\Projects\2020\chocolate-doom\src\net_gui.c(151): warning C4018: '<': signed/unsigned mismatch
-  v_diskicon.c
-  v_video.c
-F:\Projects\2020\chocolate-doom\src\v_video.c(717): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-F:\Projects\2020\chocolate-doom\src\v_video.c(924): warning C4013: 'I_GetPaletteIndex' undefined; assuming extern returning int
-  w_wad.c
-F:\Projects\2020\chocolate-doom\src\w_wad.c(212): warning C4018: '<': signed/unsigned mismatch
-F:\Projects\2020\chocolate-doom\src\w_wad.c(331): warning C4018: '>=': signed/unsigned mismatch
-F:\Projects\2020\chocolate-doom\src\w_wad.c(351): warning C4018: '>=': signed/unsigned mismatch
-F:\Projects\2020\chocolate-doom\src\w_wad.c(360): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-F:\Projects\2020\chocolate-doom\src\w_wad.c(555): warning C4018: '<': signed/unsigned mismatch
-F:\Projects\2020\chocolate-doom\src\w_wad.c(560): warning C4018: '<': signed/unsigned mismatch
-F:\Projects\2020\chocolate-doom\src\w_wad.c(593): warning C4018: '<': signed/unsigned mismatch
-  i_glvideo.c
-i_glvideo.c(111): warning C4013: 'FileReader' undefined; assuming extern returning int
-i_glvideo.c(115): warning C4013: 'LoadShader' undefined; assuming extern returning int
-i_glvideo.c(148): warning C4142: 'LoadShader': benign redefinition of type
-i_glvideo.c(331): warning C4013: 'I_Quit' undefined; assuming extern returning int
-i_glvideo.c(367): warning C4013: 'atoi' undefined; assuming extern returning int
-  Generating Code...
-  LINK : F:\Projects\2020\chocolate-doom\src\Debug\chocolate-doom.exe not found or not built by the last incremental link; performing full link
+﻿  i_glvideo.c
+i_glvideo.c(113): warning C4013: 'FileReader' undefined; assuming extern returning int
+i_glvideo.c(117): warning C4013: 'LoadShader' undefined; assuming extern returning int
+i_glvideo.c(150): warning C4142: 'LoadShader': benign redefinition of type
+i_glvideo.c(333): warning C4013: 'I_Quit' undefined; assuming extern returning int
+i_glvideo.c(383): warning C4013: 'atoi' undefined; assuming extern returning int
   chocolate-doom.vcxproj -> F:\Projects\2020\chocolate-doom\src\Debug\chocolate-doom.exe

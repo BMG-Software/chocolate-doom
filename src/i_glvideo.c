@@ -1,9 +1,9 @@
 #include "i_glvideo.h"
 
-#include "glew.h"
-
 #include "SDL.h"
+#include "glew.h" // TODO: Fix this and then change the shaders
 #include "SDL_opengl.h"
+
 
 #include "m_argv.h"
 #include "d_event.h"
@@ -26,6 +26,8 @@ static const char* window_title = "OpenGL DOOM!";
 static GLuint shader_program;
 
 static GLint attribute_coord_3d;
+
+//static GLuint vbo;
 
 #define SHADERBUFFERSIZE 2048
 
@@ -351,6 +353,20 @@ void I_GLGetEvent(void)
     }
 }
 
+
+void I_GLPushData(float * data, int size)
+{
+    /*glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glBufferData(GL_ARRAY_BUFFER, size * sizeof(GLfloat), data, GL_STATIC_DRAW);*/
+    
+    glEnableVertexAttribArray(attribute_coord_3d);
+    glVertexAttribPointer(attribute_coord_3d, 2, GL_FLOAT, GL_FALSE, 0, data);
+
+    glDrawArrays(GL_TRIANGLES, 0, size/2);
+
+    glDisableVertexAttribArray(attribute_coord_3d);
+}
+
 void I_GLInitGraphics()
 {
 
@@ -388,6 +404,12 @@ void I_GLInitGraphics()
 
     // TODO: Copy across the shaders
     attribute_coord_3d = glGetAttribLocation(shader_program, "coord3d");
+    if (attribute_coord_3d == -1)
+    {
+        // error
+    }
+
+    //glGenBuffers(1, &vbo);
 
     glViewport(0, 0, w, h);
     glClearColor(0.9f, 0.9f, 0.9f, 0.f);
@@ -409,14 +431,15 @@ void I_GLUpdateNoBlit()
 
 void I_GLFinishUpdate()
 {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glUseProgram(shader_program);
-
+    
     SDL_GL_SwapWindow(window);
 }
 
 void I_GLStartFrame()
 {
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glUseProgram(shader_program);
+
 }
 
 void I_GLStartTic()

@@ -1,9 +1,8 @@
 #version 330 core
 
-in vec2 coordTexture;
-uniform sampler2D texture;
-
 void main()
 {
-  gl_FragColor = texture2D(texture, coordTexture);
+  gl_FragColor[0] = 1.0;
+  gl_FragColor[1] = 0.0;
+  gl_FragColor[2] = 0.0;
 }

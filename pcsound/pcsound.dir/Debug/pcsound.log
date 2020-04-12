@@ -8,3 +8,4 @@ F:\Projects\2020\chocolate-doom\pcsound\pcsound_win32.c(67): warning C4996: 'Get
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\sysinfoapi.h(378): note: see declaration of 'GetVersionExA'
   Generating Code...
   pcsound.vcxproj -> F:\Projects\2020\chocolate-doom\pcsound\Debug\pcsound.lib
+  Warning: Full debug symbol generation from partial PDBs is not supported for static libraries.

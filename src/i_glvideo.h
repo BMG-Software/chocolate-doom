@@ -22,6 +22,11 @@
 
 #include "doomtype.h" // Presume I'll be needing this??
 
+
+/*
+#include "glew.h" // TODO: Fix this and then change the shaders
+#include "SDL_opengl.h"*/
+
 #define SCREENWIDTH 320
 #define SCREENHEIGHT 200
 
@@ -30,6 +35,10 @@
 // Here are the functions I think I'll need for now (pending further investigation)
 
 void I_GLGetEvent();
+
+// Just a rubbish push data function to test
+void I_GLPushData(float* data, int size);
+
 
 /*
 Called by D_DoomMain

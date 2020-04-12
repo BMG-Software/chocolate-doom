@@ -20,3 +20,4 @@ F:\Projects\2020\chocolate-doom\opl\opl_timer.c(149): warning C4244: 'function':
   opl3.c
   Generating Code...
   opl.vcxproj -> F:\Projects\2020\chocolate-doom\opl\Debug\opl.lib
+  Warning: Full debug symbol generation from partial PDBs is not supported for static libraries.
