@@ -830,6 +830,10 @@ void R_SetupFrame (player_t* player)
 
     // TODO: retain this function. This can setup our GL camera for us
 
+
+
+
+
     /*
     int		i;
     
@@ -873,17 +877,14 @@ void R_SetupFrame (player_t* player)
 void R_RenderPlayerView (player_t* player)
 {	
 
-    
-
-
-
-    
-
     R_SetupFrame (player);
 
     GLfloat test_data[] = { 0.0,  0.8, -0.8, -0.8, 0.8, -0.8, };
 
     I_GLPushData(test_data, 6);
+
+
+
 
     //R_RenderBSPNode(numnodes - 1);
 

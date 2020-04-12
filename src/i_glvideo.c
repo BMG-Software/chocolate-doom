@@ -27,8 +27,6 @@ static GLuint shader_program;
 
 static GLint attribute_coord_3d;
 
-//static GLuint vbo;
-
 #define SHADERBUFFERSIZE 2048
 
 int fullscreen = false;
@@ -356,9 +354,6 @@ void I_GLGetEvent(void)
 
 void I_GLPushData(float * data, int size)
 {
-    /*glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glBufferData(GL_ARRAY_BUFFER, size * sizeof(GLfloat), data, GL_STATIC_DRAW);*/
-    
     glEnableVertexAttribArray(attribute_coord_3d);
     glVertexAttribPointer(attribute_coord_3d, 2, GL_FLOAT, GL_FALSE, 0, data);
 
@@ -408,8 +403,6 @@ void I_GLInitGraphics()
     {
         // error
     }
-
-    //glGenBuffers(1, &vbo);
 
     glViewport(0, 0, w, h);
     glClearColor(0.9f, 0.9f, 0.9f, 0.f);
